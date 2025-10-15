@@ -1,26 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>OleDia Events</title>
-<meta name="description" content="We bring your vision to life.From intimate gatherings to grand celebrations, we plan it all! Based in Charlotte, NC."/>
-<meta property="og:title" content="OleDia Events" />
+<meta name="description" content="OleDia Events"/>
 <meta property="og:description" content="OleDia Events" />
 <meta property="og:type" content="website" />
 <link rel="preload" href="fonts/Inter-Variable.woff2" as="font" type="font/woff2" crossorigin/>
 <link rel="stylesheet" href="style.css" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap"/>
 </head>
 <body>
 
-<!-- Skip link for accessibility -->
 <a class="skip-link" href="#main">Skip to content</a>
 
 <!-- Header / Nav -->
 <header class="site-header">
-<div class="container header-inner">
-<a class="logo" href="#">OleDia Events</a>
+  <div class="container header-inner">
+    <a class="logo" href="/">
+      <img src="logo_ode.png" alt="OleDia_Logo">
+    </a>
+
+    <nav class="site-nav" aria-label="Primary">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#portfolio">Portfolio</a>
+      <a class="btn btn-small" href="#inquire">Inquire</a>
+    </nav>
+  </div>
+</header>
 
 <!-- CSS-only mobile menu (checkbox hack) -->
 <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Open menu">
@@ -29,13 +40,13 @@
 </label>
 
 <nav class="site-nav" aria-label="Primary">
-<a href="#services">Services</a>
-<a href="#galleries">Galleries</a>
 <a href="#about">About</a>
+<a href="#services">Services</a>
+<a href="#portfolio">Portfolio</a>
 <a class="btn btn-small" href="#inquire">Inquire</a>
-
 </nav>
 </div>
+
 	<div class="social-icons">
     <a href="https://instagram.com/oledia_events_" target="_blank" aria-label="Instagram">
       <i class="fab fa-instagram"></i>
@@ -47,21 +58,23 @@
       <i class="fab fa-pinterest-p"></i>
     </a>
   </div>
-</header>
+
 
 <main id="main">
 
 <!-- HERO -->
 <section class="hero" role="region" aria-label="Hero">
+
 <picture>
 <!-- Add a tighter-cropped mobile image if you have one -->
-<source media="(max-width: 600px)" srcset="wedding(7).jpg">
-<img src="wedding_planner.png" alt="############" class="hero-bg">
+<source media="(max-width: 600px)" srcset="main.png">
+<img src="main.png" alt="Elegant event setup with floral decor" class="hero-bg">
 </picture>
-<div class="hero-overlay"></div>
+
+<div class="hero-overlay" aria-hidden="true"></div>
 <div class="container hero-content">
 <p class="eyebrow">Charlotte • NC • Beyond</p>
-<h1>We bring your vision to life. <br>From intimate gatherings to grand celebrations,</br>we plan it all!</br><span class="subtle">For you.</span></h1>
+<h1>We bring your vision to life.<br>From intimate gatherings to grand celebrations,<br>we plan it all—<span class="subtle">for you.</span></h1>
 <p class="lead">Where every detail tells your story in style.</p>
 <a class="btn" href="#inquire">Let’s get started</a>
 </div>
@@ -81,29 +94,36 @@
 <p>Designed with heart, delivered with care.We believe every celebration should feel effortless and deeply personal. Our full-service planning is built around your story, your style, and your peace of mind.
 </p>
 <ul class="list">
-<li>Personalized design boards to reflect your love story</li>
-<li>Trusted vendor matchmaking and communication</li>
-<li>Timeline creation and day-of coordination with a calming touch</li>
+<li>Vision development and theme styling</li>
+<li>Venue scouting and vendor coordination</li>
+<li>Budget creation and timeline management</li>
+<li>Guest list management and RSVP tracking</li>
+<li>Day-of execution and guest experience oversight</li>
 </ul>
 </article>
 
 <article class="card">
-<h3>Day-of Coordination</h3>
-<p>____________________________________________________.</p>
+<h3>Partial Planning</h3>
+<p>Whether you're halfway there or just need a second set of eyes, we step in with clarity, creativity, and calm to elevate your event without taking over.</p>
 <ul class="list">
-<li>___________________</li>
-<li>_______________________</li>
-<li>______________________n</li>
+<li>Vendor recommendations and contract review</li>
+<li>Styling consultation and layout refinement</li>
+<li>Timeline polishing and day-of coordination</li>
+<li>Budget assessment and optimization</li>
+<li>Guest communication support</li>
+<li>Creative enhancements and branding support</li>
 </ul>
 </article>
 
 <article class="card">
 <h3>Custom Decor & Themes</h3>
-<p>______________________________.</p>
+<p>We transform your vision into a sensory experience guests will remember. Whether you're dreaming of elegance, whimsy, or bold innovation, we design every detail to reflect your story and elevate your brand.</p>
 <ul class="list">
-<li>____________________</li>
-<li>______________________</li>
-<li>_____________________</li>
+<li>Bespoke theme development and mood boards</li>
+<li>Handpicked color palettes and font pairings</li>
+<li>Interactive elements for educational or kid-friendly events</li>
+<li>Custom signage, backdrops, and table settings</li>
+<li>Flower arrangments</li>
 </ul>
 </article>
 </div>
@@ -111,11 +131,11 @@
 </section>
 
 
-<!-- GALLERIES -->
-<section id="galleries" class="galleries section">
+<!-- PORTFOLIO -->
+<section id="portfolio" class="portfolio section">
 <div class="container">
 <header class="section-head">
-<h2>Galleries</h2>
+<h2>Portfolio</h2>
 <p class="section-intro">A few favorite celebrations.</p>
 </header>
 
@@ -151,39 +171,67 @@
 <header class="section-head">
 <h2>Current Events</h2>
 <p class="section-intro">Current Events By Us.</p>
+</header>
 
-<figure class="event-tile">
+<div class="events-title">
 <img src="ind_day1.jpg" alt="picture2">
 <figcaption>Ukrainian Independence Day in Charlotte, NC</figcaption>
 </figure>
-<figure class="event-tile">
+</div>
+<div class="events-title">
 <img src="gala.jpg" alt="picture3">
 <figcaption>Gala Event, Charlotte, NC</figcaption>
-</figure>
+</div>
+</div>
+</section>
 
 <!-- TESTIMONIALS -->
-<section class="testimonials section">
+
+<section id="comments" class="comments-section">
 <div class="container">
 <header class="section-head">
-<h2>Our Clients</h2>
+<h2>Love Notes</h2>
+<p class="section-intro">Words from Our Clients</p>
 </header>
+</div>
 
-<div class="quote-grid">
-<blockquote class="quote">
-<p>“Every step of the planning process felt seamless. Diana listened carefully to our ideas, offered thoughtful suggestions, and kept us organized with timelines, vendor coordination, and budget tracking. Their communication was prompt, clear, and reassuring—especially during those inevitable moments of stress.
-”</p>
-<footer>Marianna & Nazar</footer>
-</blockquote>
-<blockquote class="quote">
-<p>“They took the time to understand our vision, theme, and guest list dynamics, and then elevated it with thoughtful touches we hadn’t even considered. Whether it was coordinating vendors, managing RSVPs, or curating the perfect playlist, every detail was handled with care.”</p>
-<footer>Oliver</footer>
-</blockquote>
-<blockquote class="quote">
-<p>“Kids were entertained, adults were relaxed, and the birthday star was glowing with happiness. The flow of the event was smooth, with activities and surprises timed perfectly. We received so many compliments from guests who said it was one of the best birthday parties they’d ever attended.”</p>
-<footer>Raksha</footer>
-</blockquote>
-</div>
-</div>
+<figure class="comments">
+  <figcaption>
+    <blockquote>
+      <p>“The decorations were stunning and matched our theme exactly. Guests loved it!”</p>
+    </blockquote>
+    <h3>The Patel Family</h3>
+    <h4>Birthday Event</h4>
+  </figcaption>
+</figure>
+<figure class="comments">
+  <figcaption>
+    <blockquote>
+      <p>“Diana made our wedding day feel effortless and beautiful. From the first call, she understood our vision and added thoughtful touches we hadn’t even considered. The layout, the timing, the decor—everything was seamless. We truly got to enjoy the day without stress.”</p>
+    </blockquote>
+    <h3>Emily & James</h3>
+    <h4>Wedding Planning</h4>
+  </figcaption>
+</figure>
+<figure class="comments">
+  <figcaption>
+    <blockquote>
+      <p>“I had most of my event planned but needed help pulling it all together. Marianna stepped in with grace and clarity. She refined the timeline, coordinated vendors, and made sure everything ran smoothly. Her calm energy was exactly what I needed.”</p>
+    </blockquote>
+    <h3>Tasha.R</h3>
+    <h4>Partial Planning</h4>
+  </figcaption>
+</figure>
+<figure class="comments">
+  <figcaption>
+    <blockquote>
+      <p>“The food was absolutely incredible—our guests are still talking about it!”
+Diana helped us choose the perfect caterer and styled the presentation beautifully. From the signature cocktails to the dessert table, everything looked and tasted amazing. Her attention to detail made the whole experience feel elevated and effortless.</p>
+    </blockquote>
+    <h3>Lena & David</h3>
+    <h4>Anniversary Event</h4>
+  </figcaption>
+</figure>
 </section>
 
 <!-- ABOUT -->
@@ -218,8 +266,8 @@ From “yes” to “I do,” we’ll help you stay on track every step of the w
 <p class="section-intro">Tell us more about your event. We reply within 24 hours.</p>
 </header>
 
-<!-- mailto-->
-<form class="form" action="mailto:m.yatsko1987@gmail.com" method="post" enctype="text/plain">
+<!-- mailto keeps it HTML-only; swap for a real backend later -->
+<form class="form" action="mailto:olediaevents@gmail.com" method="post" enctype="text/plain">
 <div class="form-row">
 <label for="name">Your Name*</label>
 <input id="name" name="Name" type="text" required>
@@ -237,7 +285,7 @@ From “yes” to “I do,” we’ll help you stay on track every step of the w
 <input id="location" name="Location" type="text" placeholder="Venue / City">
 </div>
 <div class="form-row">
-<label for="message">Tell us about your event*</label>
+<label for="message">Tell us about your event. Please add approximate number of attendees*</label>
 <textarea id="message" name="Message" rows="5" required></textarea>
 </div>
 <button class="btn" type="submit">Submit</button>
@@ -250,20 +298,30 @@ From “yes” to “I do,” we’ll help you stay on track every step of the w
 
 <!-- FOOTER -->
 <footer class="site-footer">
-<div class="container footer-grid">
-<a class="logo logo-small" href="#">OleDia Events</a>
-<nav aria-label="Footer">
-<a href="#services">Services</a>
-<a href="#galleries">Galleries</a>
-<a href="#about">About</a>
-<a href="#inquire">Inquire</a>
-</nav>
-<p class="credit">© <span id="year"></span> OleDia Events</p>
-</div>
+  <div class="container footer-grid">
+    <a class="logo logo-small" href="">
+      <img src="logo_ode.png" alt="OleDia_Logo"> OleDia Events
+    </a>
+    <nav aria-label="Footer">
+      <a href="#services">Services</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#about">About</a>
+      <a href="#inquire">Inquire</a>
+    </nav>
+    <p class="credit">©<span id="year"></span> OleDia Events</p>
+  </div>
 </footer>
 
+
+<!-- Tiny inline script just for the year -->
 <script>
 document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+<script>
+window.addEventListener('scroll', () => {
+  const header = document.querySelector('.site-header');
+  header.classList.toggle('scrolled', window.scrollY > 50);
+});
 </script>
 </body>
 </html>
